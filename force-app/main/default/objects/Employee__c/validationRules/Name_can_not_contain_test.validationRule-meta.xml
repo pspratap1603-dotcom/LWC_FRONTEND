@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_can_not_contain_test</fullName>
+    <active>true</active>
+    <description>Name cannot contain test</description>
+    <errorConditionFormula>CONTAINS(LOWER(Name), &quot;test&quot;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Name cannot contain test</errorMessage>
+</ValidationRule>

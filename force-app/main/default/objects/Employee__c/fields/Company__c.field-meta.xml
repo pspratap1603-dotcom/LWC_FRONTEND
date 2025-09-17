@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Company</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or does not match filter criteria. Employee country is not matching with Company country.</errorMessage>
+        <filterItems>
+            <field>$Source.country__c</field>
+            <operation>equals</operation>
+            <valueField>Company__c.country__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Company__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <infoMessage>Please select the country whose country is same as employee country.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Company__c</referenceTo>
+    <relationshipLabel>Employees</relationshipLabel>
+    <relationshipName>Employees</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

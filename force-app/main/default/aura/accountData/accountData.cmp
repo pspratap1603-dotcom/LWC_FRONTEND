@@ -1,0 +1,16 @@
+<aura:component controller="AccountController">
+    <!-- Correct attribute typing -->
+    <aura:attribute name="accList" type="Account[]"/>
+
+    <!-- Init handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!-- Lightning Select dropdown -->
+    <lightning:select name="select1" label="Select an Account">
+        <option value="">None</option>
+
+        <aura:iteration items="{!v.accList}" var="item">
+            <option value="{!item.Id}">{!item.Name}</option>
+        </aura:iteration>
+    </lightning:select>
+</aura:component>

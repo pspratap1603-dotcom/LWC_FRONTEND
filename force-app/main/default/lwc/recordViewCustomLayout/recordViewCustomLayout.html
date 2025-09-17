@@ -1,0 +1,40 @@
+<!--<template> 
+    <lightning-record-view-form 
+    record-id={recordId} 
+    object-api-name="Account">
+     <div class = "slds-grid">
+        <div class = "slds-col slds-size_1-of-2">
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="Phone"></lightning-output-field>
+
+        </div>
+        <div class= "slds-col slds-size_1-of-2">
+            <lightning-output-field field-name="Industry"></lightning-output-field>
+            <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+     </div>
+     </div>
+</lightning-record-view-form>  
+</template> -->
+
+<template>
+    <lightning-record-edit-form 
+    record-id={recordId} 
+    object-api-name="Account">
+    
+    <lightning-messages></lightning-messages>
+    <div class = "slds-grid">
+        <div class = "slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Title"></lightning-input-field>
+            </div>
+            <div class= "slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <lightning-input-field field-name="Email"></lightning-input-field>
+            </div>
+            </div>
+            <div class = "slds-margin-top_medium">
+            <lightning-button variant="brand" type="submit" label="Edit Contact"></lightning-button>
+            </div>
+
+    </lightning-record-edit-form>   
+</template>

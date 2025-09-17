@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="message" type="String" default="World"/>
+    <aura:attribute name="message1" type="String" default="World1"/>
+
+    <p>Hello : {!v.message}</p>
+    <lightning:button label="First Button" onclick="{!c.handleClick}"/>
+    <br/><br/>
+    <hr/>
+    <p>Hello : {!v.message1}</p>
+    <lightning:button label="Second Button" onclick="{!c.handleClick}"/>
+
+</aura:component>

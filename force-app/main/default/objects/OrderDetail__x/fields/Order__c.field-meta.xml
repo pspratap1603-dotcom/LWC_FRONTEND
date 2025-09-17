@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order__c</fullName>
+    <externalDeveloperName>orderID</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Order</label>
+    <length>255</length>
+    <referenceTo>ExternalOrder__x</referenceTo>
+    <relationshipLabel>OrderDetails</relationshipLabel>
+    <relationshipName>OrderDetails</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

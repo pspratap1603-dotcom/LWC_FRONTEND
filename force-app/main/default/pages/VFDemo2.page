@@ -1,0 +1,17 @@
+<apex:page >
+    <apex:pageBlock title="First page block">
+        <apex:pageBlockSection title="First page block section">
+            {! $User.FirstName & '-' & $User.LastName}
+            <p>
+                Today' Date is {!Today()}
+                Current Year is {!Year(Today())}
+            </p>
+            <P>
+                {!if (contains('salesforce.com','force.com'),'yes','no')}
+            </P>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Second page block section">
+            2. Anubhav Mahana
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

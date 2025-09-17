@@ -1,0 +1,12 @@
+h1{
+    font-size: xx-large;
+    color: blue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;;
+}
+p{
+    font-size: xx-large;
+    color: red;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
